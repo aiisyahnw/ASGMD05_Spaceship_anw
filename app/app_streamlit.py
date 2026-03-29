@@ -5,7 +5,7 @@ import numpy as np
 from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
-pipeline = joblib.load(BASE_DIR.parent / "artifacts/model.pkl")
+pipeline = joblib.load("artifacts/model.pkl")
 def main():
     st.set_page_config(page_title="ASG 04 MD - Aisyah NW - Spaceship Titanic Model Deployment")
     
